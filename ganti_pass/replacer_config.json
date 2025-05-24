@@ -1,0 +1,31 @@
+{
+    "field_values": {
+        "answer1": "Fahrul33",
+        "answer2": "Fahrul33",
+        "pwd": "procadet234",
+        "surePwd": "procadet234"
+    },
+    "fixed_values": {
+        "queId1": "1",
+        "queId2": "1"
+    },
+    "clear_fields": [
+        "bindPhone", 
+        "bindMail"
+    ],
+    "enabled": true,
+    "target_domains": [
+        
+    ],
+    "target_paths": [
+        
+    ],
+    "_comments": {
+        "field_values": "Values to set for specific input fields",
+        "fixed_values": "Fixed values for queId fields", 
+        "clear_fields": "Fields to clear (set empty value)",
+        "enabled": "Enable/disable the replacer",
+        "target_domains": "Only apply to these domains (empty = all)",
+        "target_paths": "Only apply to these paths (empty = all)"
+    }
+}

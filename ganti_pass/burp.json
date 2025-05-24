@@ -1,0 +1,75 @@
+{
+    "proxy":{
+        "match_replace_disable_out_of_scope":false,
+        "match_replace_rules":[
+            {
+                "enabled":true,
+                "is_simple_match":true,
+                "rule_type":"response_body",
+                "string_match":"           <input type=\"hidden\" id=\"bindPhone\" value=\"1\" />"
+            },
+            {
+                "enabled":true,
+                "is_simple_match":true,
+                "rule_type":"response_body",
+                "string_match":"           <input type=\"hidden\" id=\"bindMail\" value=\"1\" />"
+            },
+            {
+                "enabled":true,
+                "is_simple_match":true,
+                "rule_type":"response_body",
+                "string_match":"<input type=\"hidden\" id=\"queId1\" value=\"2\" />",
+                "string_replace":"<input type=\"hidden\" id=\"queId1\" value=\"1\" />"
+            },
+            {
+                "enabled":true,
+                "is_simple_match":true,
+                "rule_type":"response_body",
+                "string_match":"<input type=\"hidden\" id=\"queId1\" value=\"3\" />",
+                "string_replace":"<input type=\"hidden\" id=\"queId1\" value=\"1\" />"
+            },
+            {
+                "enabled":true,
+                "is_simple_match":true,
+                "rule_type":"response_body",
+                "string_match":"      <input type=\"hidden\" id=\"queId2\" value=\"1\" />",
+                "string_replace":"      <input type=\"hidden\" id=\"queId2\" value=\"3\" />"
+            },
+            {
+                "enabled":true,
+                "is_simple_match":true,
+                "rule_type":"response_body",
+                "string_match":"      <input type=\"hidden\" id=\"queId2\" value=\"2\" />",
+                "string_replace":"      <input type=\"hidden\" id=\"queId2\" value=\"3\" />"
+            },
+            {
+                "enabled":true,
+                "is_simple_match":true,
+                "rule_type":"response_body",
+                "string_match":"id=\"answer1\"",
+                "string_replace":"id=\"answer1\" value=\"naruto\""
+            },
+            {
+                "enabled":true,
+                "is_simple_match":true,
+                "rule_type":"response_body",
+                "string_match":"id=\"answer2\"",
+                "string_replace":"id=\"answer2\" value=\"bakso\""
+            },
+            {
+                "enabled":true,
+                "is_simple_match":true,
+                "rule_type":"response_body",
+                "string_match":"id=\"pwd\"",
+                "string_replace":"id=\"pwd\" value=\"procadet234\""
+            },
+            {
+                "enabled":true,
+                "is_simple_match":true,
+                "rule_type":"response_body",
+                "string_match":"id=\"surePwd\"",
+                "string_replace":"id=\"surePwd\" value=\"procadet234\""
+            }
+        ]
+    }
+}
